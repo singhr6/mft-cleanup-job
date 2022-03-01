@@ -1,0 +1,10 @@
+env: prod                                         # Options - prod, qa, dev.
+retention: 30                                     # Put the data retention period in days
+job-name: 'mft-cleanup'                           # Name of the job
+
+---
+cleanup-dir:                                      # List of directories whose files need to be cleaned up.
+  - \\tibco-app-vp11\E$\TIBCO\MFT_PS_Log\Trace
+  - \\tibco-app-vp11\E$\TIBCO\MFTDNI_DeamonLog
+  - \\tibco-app-vp12\E$\TIBCO\MFT_PS_Log\Trace
+  - \\tibco-app-vp12\E$\TIBCO\MFTDNI_DeamonLog
